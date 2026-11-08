@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+/* 6주차 복습 : 새싹반 홈페이지 스타일 (완성, 고치지 않습니다) */
+body {
+  font-family: "맑은 고딕", sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Jua", sans-serif;
+  color: #2e7d32;
+}
+
+h2, h3 {
+  color: #388e3c;
+}
+
+a {
+  color: #1565c0;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+  background: linear-gradient(to bottom, #a5d6a7, white);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 80px;
+  margin: 0;
+  padding: 8px 16px;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.main {
+  width: 64%;
+}
+
+.aside {
+  width: 30%;
+  padding: 16px;
+  background-color: #f1f8e9;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  flex: 1 1 200px;
+  padding: 16px;
+  border: 2px solid #a5d6a7;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.tag {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  padding: 4px 12px;
+  margin: 4px 0;
+  text-align: center;
+  background-color: #c8e6c9;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 16px;
+  font-family: inherit;
+  border: 1px solid #a5d6a7;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  width: 56px;
+}
+
+footer {
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 24px;
+  padding: 16px;
+}
+
+
+/* 10주차 : 자바스크립트가 붙였다 뗐다 하는 클래스 */
+
+/* 드롭다운 : .show가 붙으면 보임 */
+.dropdown.show {
+  display: block;
+}
+
+/* 카드 : .selected가 붙으면 강조 */
+.card.selected {
+  border-color: #e8a0aa;
+  background-color: #fdeef0;
+}
+
+/* 다크모드 : body에 .dark가 붙으면 어두운 화면 */
+body.dark {
+  color: #eee;
+  background-color: #222;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #a5d6a7;
+}
+
+.dark a {
+  color: #90caf9;
+}
+
+.dark header {
+  background: #333;
+}
+
+.dark .aside,
+.dark .dropdown {
+  background-color: #333;
+}
+
+.dark .card {
+  background-color: #2c2c2c;
+}
+
+.dark .card.selected {
+  background-color: #5a3a40;
+}
+
+.dark .tag {
+  color: #333;
+}

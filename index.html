@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>10주차 새싹반 홈페이지</title>
+  <link rel="stylesheet" href="10_event.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 새싹반 홈페이지</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">홈</a></li>
+        <li class="item"><a href="#" id="menuBtn">수업안 ▾</a>
+          <ul class="dropdown" id="dropdown">
+            <li><a href="#">국어</a></li>
+            <li><a href="#">과학</a></li>
+            <li><a href="#">미술</a></li>
+          </ul>
+        </li>
+        <li><a href="#">자료실</a></li>
+        <li><button id="darkBtn">🌙 다크모드</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <div class="main">
+      <h2>오늘의 인사</h2>
+      <p id="message">버튼을 눌러 보세요.</p>
+      <button id="helloBtn">인사하기</button>
+      <button id="likeBtn">👍 좋아요</button>
+      <span id="likeCount">0</span>
+
+      <h2>학급 카드</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>과학 시간 🔬</h3>
+          <p>오늘의 키워드: 호기심, 관찰, 기록</p>
+        </div>
+        <div class="card">
+          <h3>미술 시간 🎨</h3>
+          <p>마음 가는 색 3가지를 골라보아요.</p>
+        </div>
+        <div class="card">
+          <h3>국어 시간 📖</h3>
+          <p>오늘 읽은 책에서 한 문장 고르기</p>
+        </div>
+        <div class="card">
+          <h3>체육 시간 ⚽</h3>
+          <p>운동장 집합, 줄넘기 준비</p>
+        </div>
+      </div>
+
+      <h2>방명록</h2>
+      <form id="guestForm">
+        <p>
+          <label for="guestName">이름</label>
+          <input type="text" id="guestName">
+        </p>
+        <p>
+          <label for="guestText">한마디</label>
+          <input type="text" id="guestText" maxlength="30">
+          <span id="textCount">0 / 30</span>
+        </p>
+        <button type="submit">남기기</button>
+      </form>
+      <ul id="guestList"></ul>
+    </div>
+
+    <div class="aside">
+      <h2>알림</h2>
+      <p id="notice">사진은 가로모드로, 10장 이내</p>
+      <h2>미리보기</h2>
+      <p id="preview">이름을 입력하면 여기에 나타납니다.</p>
+      <h2>키워드</h2>
+      <p>
+        <span class="tag">#호기심</span>
+        <span class="tag">#관찰</span>
+        <span class="tag">#기록</span>
+      </p>
+      <p id="keyword">키워드를 눌러 보세요.</p>
+    </div>
+  </div>
+
+  <footer>© 2026 새싹반</footer>
+</body>
+</html>
